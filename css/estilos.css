@@ -1,0 +1,150 @@
+/*general*/
+h3{
+    font-family: "Libre Franklin", sans-serif;
+    text-align: center;
+}
+
+p, label, td{
+    font-family: "Kanit", sans-serif;
+    text-align: center;
+}
+
+li{
+    font-family: "Kanit", sans-serif;
+ 
+}
+
+img{
+    border-radius: 20px;
+}
+
+
+/*Navbar*/
+.navbar{
+    background-color: #3e90b6;
+    padding: 1%;
+}
+
+.logo-poke img{
+    width: 5%;
+}
+
+.elem-nav{
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.elem-nav a{
+    padding: 2%;
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+    color: #ffffff;
+}
+
+/*Main*/
+h1{
+    text-align: center;
+    font-family: "Libre Franklin", sans-serif;
+}
+
+.img-carrousel{
+    padding: 5%;
+}
+
+.img-carrousel img{
+    width: 90%;
+}
+
+
+.bulbasur-box img{
+    width: 100%;
+}
+.bulbasur-box span{
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+}
+.bulbasur-box{
+    display :grid;
+    align-items: center;
+}
+
+
+.charmander-box img{
+    width: 100%;
+}
+.charmander-box span{
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+}
+.charmander-box{
+    display :grid;
+    align-items: center;
+}
+
+
+.squirtle-box img{
+    width: 100%;
+}
+.squirtle-box span{
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+}
+.squirtle-box{
+    display :grid;
+    align-items: center;
+}
+
+
+.pokemon-ini{
+    display: ruby-text;   
+}
+
+.tipos-poke{
+    display: ruby-text;
+}
+
+/*Footer*/
+.cont-foot{
+    display: ruby-text;
+    background-color: #173847;
+}
+
+.cont-redes{
+    padding: 20px;
+    display: flex;
+    justify-content: left;
+
+}
+.cont-redes a{
+    padding: 2%;
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+    color: #ffffff;
+}
+
+/*estilos adivina pokemon*/
+.img-gues{
+    display: flex;
+    align-items: center;
+}
+
+.img-gues img{
+    width: 10%;
+}
+
+.form-elem{
+    display :grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-form{
+    margin: 20px;
+}
+
+.tabla{
+    display :grid;
+    align-items: center;
+    justify-content: center;
+}
