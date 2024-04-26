@@ -19,27 +19,19 @@ img{
 }
 
 
-/*Navbar*/
+/*Navbar al momento de hacer esto responsivo, quitar los selectores elem-nav, y elem-nav a*/
 .navbar{
     background-color: #3e90b6;
     padding: 1%;
 }
 
-.logo-poke img{
-    width: 5%;
+.logo-poke {
+    padding: 5px;
+    width: 50px;
 }
 
-.elem-nav{
-    float: right;
-    display: flex;
-    align-items: center;
-}
-
-.elem-nav a{
-    padding: 2%;
-    text-decoration: none;
-    font-family: "Rubik", sans-serif;
-    color: #ffffff;
+.navbar-expand-lg .navbar-collapse {/*sobreeescribiendo estilos de bootstrap*/
+    justify-content: flex-end;
 }
 
 /*Main*/
@@ -69,7 +61,6 @@ h1{
     align-items: center;
 }
 
-
 .charmander-box img{
     width: 100%;
 }
@@ -81,7 +72,6 @@ h1{
     display :grid;
     align-items: center;
 }
-
 
 .squirtle-box img{
     width: 100%;
@@ -104,6 +94,15 @@ h1{
     display: ruby-text;
 }
 
+.galeria{
+    display: ruby-text;
+    padding: 10px;
+}
+
+.galeria > img{
+    width: 30%;
+}
+
 /*Footer*/
 .cont-foot{
     display: ruby-text;
@@ -123,6 +122,9 @@ h1{
     color: #ffffff;
 }
 
+.img-foot{
+    width: 100px; /*modificar esto al momento de hacer el modelo responsivo*/
+}
 /*estilos adivina pokemon*/
 .img-gues{
     display: flex;
