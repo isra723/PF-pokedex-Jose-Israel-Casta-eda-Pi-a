@@ -18,14 +18,19 @@ img{
     border-radius: 20px;
 }
 
-
-/*Navbar al momento de hacer esto responsivo, quitar los selectores elem-nav, y elem-nav a*/
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+  /*navbar*/
 .navbar{
     background-color: #3e90b6;
     padding: 1%;
 }
 
-.logo-poke {
+.navbar-nav >a{
+    color: #ffffff;
+}
+.logo-poke{
     padding: 5px;
     width: 50px;
 }
@@ -34,6 +39,9 @@ img{
     justify-content: flex-end;
 }
 
+.navbar-toggler{
+    background-color: #a7b2b8;
+}
 /*Main*/
 h1{
     text-align: center;
@@ -87,20 +95,25 @@ h1{
 
 
 .pokemon-ini{
-    display: ruby-text;   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.tipos-poke{
-    display: ruby-text;
+.tipos-poke {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .galeria{
-    display: ruby-text;
-    padding: 10px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .galeria > img{
-    width: 30%;
+    width: 400px;
 }
 
 .info-texto{
@@ -115,16 +128,18 @@ h1{
     text-align: center  ;
 }
 /*Footer*/
-.cont-foot{
-    display: ruby-text;
+.cont-foot {
     background-color: #173847;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .cont-redes{
     padding: 20px;
-    display: flex;
-    justify-content: left;
-
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .cont-redes a{
     padding: 2%;
@@ -134,8 +149,29 @@ h1{
 }
 
 .img-foot{
-    width: 100px; /*modificar esto al momento de hacer el modelo responsivo*/
+    width: 500px; 
 }
+
+@media only screen and (max-width: 650px){
+    .img-foot{
+        width: 200px;
+    }
+
+    .galeria > img{
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .img-foot{
+        width: 100px;
+    }
+
+    .galeria > img{
+        width: 100px;
+    }
+}
+
 /*estilos adivina pokemon*/
 .img-gues{
     display: flex;
