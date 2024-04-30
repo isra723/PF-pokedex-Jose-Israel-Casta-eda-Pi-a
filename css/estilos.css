@@ -103,6 +103,17 @@ h1{
     width: 30%;
 }
 
+.info-texto{
+    padding: 10%;
+}
+
+.info-texto > p{
+    text-align: justify;
+}
+
+.info-texto > h3{
+    text-align: center  ;
+}
 /*Footer*/
 .cont-foot{
     display: ruby-text;
