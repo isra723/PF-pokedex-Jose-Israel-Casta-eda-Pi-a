@@ -57,38 +57,38 @@ h1{
 }
 
 
-.bulbasur-box img{
+.pokemon-ini__bulbasur-box img{
     width: 100%;
 }
-.bulbasur-box span{
+.pokemon-ini__bulbasur-box span{
     text-align: center;
     font-family: "Kanit", sans-serif;
 }
-.bulbasur-box{
+.pokemon-ini__bulbasur-box{
     display :grid;
     align-items: center;
 }
 
-.charmander-box img{
+.pokemon-ini__charmander-box img{
     width: 100%;
 }
-.charmander-box span{
+.pokemon-ini__charmander-box span{
     text-align: center;
     font-family: "Kanit", sans-serif;
 }
-.charmander-box{
+.pokemon-ini__charmander-box{
     display :grid;
     align-items: center;
 }
 
-.squirtle-box img{
+.pokemon-ini__squirtle-box img{
     width: 100%;
 }
-.squirtle-box span{
+.pokemon-ini__squirtle-box span{
     text-align: center;
     font-family: "Kanit", sans-serif;
 }
-.squirtle-box{
+.pokemon-ini__squirtle-box{
     display :grid;
     align-items: center;
 }
@@ -135,13 +135,13 @@ h1{
     flex-wrap: wrap;
 }
 
-.cont-redes{
+.cont-foot__cont-redes{
     padding: 20px;
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.cont-redes a{
+.cont-foot__cont-redes a{
     padding: 2%;
     text-decoration: none;
     font-family: "Rubik", sans-serif;
@@ -153,7 +153,7 @@ h1{
 }
 
 @media only screen and (max-width: 650px){
-    .img-foot{
+    .cont-foot__img-foot{
         width: 200px;
     }
 
@@ -163,7 +163,7 @@ h1{
 }
 
 @media only screen and (max-width: 375px){
-    .img-foot{
+    .cont-foot__img-foot{
         width: 100px;
     }
 
