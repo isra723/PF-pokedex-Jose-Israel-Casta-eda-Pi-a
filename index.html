@@ -23,36 +23,37 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-md  
-                navbar-dark bg-dark">
-            <div class="container-fluid">
-                <img src="assets/pokebola.png" alt="logo pokebola" class="logo-poke">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
-                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                navbar-dark">
+            <div class=" navbar__cont container-fluid">
+                <img src="assets/pokebola.png" alt="logo pokebola" class="navbar__cont__logo-poke">
+                <button class="navbar__cont__btn navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar__cont__btn__toggler navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarToggler">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
+                <div class="navbar__cont__div collapse navbar-collapse" id="navbarToggler">
+                    <ul class="navbar__cont__div__list navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="navbar__cont__div__list__element nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">
                                 Inicio
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="navbar__cont__div__list__element nav-item">
                             <a class="nav-link active" aria-current="page" href="html/lista.html">
                                 Lista
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="navbar__cont__div__list__element nav-item">
                             <a class="nav-link active" aria-current="page" href="html/adivina.html">
                                 ¿QEP?
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="navbar__cont__div__list__element nav-item">
                             <a class="nav-link active" aria-current="page" href="html/galeria.html">
                                 Galeria
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="navbar__cont__div__list__element nav-item">
                             <a class="nav-link active" aria-current="page" href="html/FAQ.html">
                                 FAQ
                             </a>
@@ -63,29 +64,29 @@
         </nav>
     </header>
     <main>
-        <div>
-            <h1>Pokedex</h1>
+        <div class="title">
+            <h1 class="title__text">Pokedex</h1>
         </div>
         <div id="carouselExample" class="carousel slide pointer-event">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
+            <div class="carousel__cont carousel-inner">
+                <div class="carrousel__cont__img carousel-item active">
                     <img src="assets/picachucarrousel.jpg" alt="carrousel pokemon" class="d-block w-100">
                 </div>
-                <div class="carousel-item">
+                <div class="carrousel__cont__img carousel-item">
                     <img src="assets/pokeall.jpg" alt="carrousel pokemon" class="d-block w-100">
                 </div>
 
             </div>
-            <button class="carousel-control-prev" type="button" href="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <button class="carousel__ant carousel-control-prev" type="button" href="#carouselExample" data-bs-slide="prev">
+                <span class="carousel__ant__icon carousel-control-prev-icon" aria-hidden="true"></span>
             </button>
-            <button class="carousel-control-next" type="button" href="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <button class="carousel__nxt carousel-control-next" type="button" href="#carouselExample" data-bs-slide="next">
+                <span class="carousel__nxt__icon carousel-control-next-icon" aria-hidden="true"></span>
             </button>
         </div>
         <section class="info-texto">
-            <h3>¿Que es un pokemon?</h3>
-            <p>Pokémon (ポケモン Pokemon?) es una franquicia de medios que originalmente comenzó como un videojuego RPG,
+            <h3 class="info-texto__title">¿Que es un pokemon?</h3>
+            <p class="info-texto__informacion">Pokémon (ポケモン Pokemon?) es una franquicia de medios que originalmente comenzó como un videojuego RPG,
                 pero debido a su popularidad ha logrado expandirse a otros medios de entretenimiento como series de
                 televisión, películas, juegos de cartas, ropa, entre otros, convirtiéndose en una marca que es
                 reconocida en el mercado mundial. Las ventas de videojuegos hasta el 1 de diciembre de 2006 habían
@@ -94,7 +95,7 @@
                 Nintendo. La franquicia celebró su décimo aniversario el 27 de febrero de 2006.</p>
 
         </section>
-        <h3>Pokemones iniciales</h3>
+        <h3 class="title-poke-ini">Pokemones iniciales</h3>
         <section class="pokemon-ini">
             <span class="pokemon-ini__bulbasur-box">
                 <span>Bulbasaur</span>
@@ -110,76 +111,76 @@
             </span>
         </section>
         <br>
-        <h3>Tipos de pokemon</h3>
+        <h3 class="title-poke-types">Tipos de pokemon</h3>
         <section class="tipos-poke">
 
-            <div>
-                <img src="assets/planta.png" alt="logo planta">
-                <p>Planta</p>
+            <div class="tipos-poke__planta">
+                <img src="assets/planta.png" alt="logo planta" class="tipos-poke__planta__img">
+                <p class="tipos-poke__planta__text">Planta</p>
             </div>
-            <div>
-                <img src="assets/veneno.png" alt="logo veneno">
-                <p>Veneno</p>
+            <div class="tipos-poke__veneno">
+                <img src="assets/veneno.png" alt="logo veneno" class="tipos-poke__veneno__img">
+                <p class="tipos-poke__veneno__text">Veneno</p>
             </div>
-            <div>
-                <img src="assets/fuego.png" alt="logo fuego">
-                <p>Fuego</p>
+            <div class="tipos-poke__fuego">
+                <img src="assets/fuego.png" alt="logo fuego" class="tipos-poke__fuego__img">
+                <p class="tipos-poke__fuego__text">Fuego</p>
             </div>
-            <div>
-                <img src="assets/volador.png" alt="logo volador">
-                <p>Volador</p>
+            <div class="tipos-poke__volador">
+                <img src="assets/volador.png" alt="logo volador" class="tipos-poke__volador__img">
+                <p class="tipos-poke__volador__text">Volador</p>
             </div>
-            <div>
-                <img src="assets/agua.png" alt="logo agua">
-                <p>Agua</p>
+            <div class="tipos-poke__agua">
+                <img src="assets/agua.png" alt="logo agua" class="tipos-poke__agua__img">
+                <p class="tipos-poke__agua__text">Agua</p>
             </div>
-            <div>
-                <img src="assets/bicho.png" alt="logo bicho">
-                <p>Bicho</p>
+            <div class="tipos-poke__bicho">
+                <img src="assets/bicho.png" alt="logo bicho" class="tipos-poke__bicho__img">
+                <p class="tipos-poke__bicho__text">Bicho</p>
             </div>
-            <div>
-                <img src="assets/normal.png" alt="logo normal">
-                <p>Normal</p>
+            <div class="tipos-poke__normal">
+                <img src="assets/normal.png" alt="logo normal" class="tipos-poke__normal__img">
+                <p class="tipos-poke__normal__text">Normal</p>
             </div>
-            <div>
-                <img src="assets/electrico.png" alt="logo electrico">
-                <p>Electrico</p>
+            <div class="tipos-poke__electrico">
+                <img src="assets/electrico.png" alt="logo electrico" class="tipos-poke__electrico__img">
+                <p class="tipos-poke__electrico__text">Electrico</p>
             </div>
-            <div>
-                <img src="assets/tierra.png" alt="logo tierra">
-                <p>Tierra</p>
+            <div class="tipos-poke__tierra">
+                <img src="assets/tierra.png" alt="logo tierra" class="tipos-poke__tierra__img">
+                <p class="tipos-poke__tierra__text">Tierra</p>
             </div>
-            <div>
-                <img src="assets/hada.png" alt="logo hada">
-                <p>Hada</p>
+            <div class="tipos-poke__hada">
+                <img src="assets/hada.png" alt="logo hada" class="tipos-poke__hada__img">
+                <p class="tipos-poke__hada__text">Hada</p>
             </div>
-            <div>
-                <img src="assets/lucha.png" alt="logo lucha">
-                <p>Lucha</p>
+            <div class="tipos-poke__lucha">
+                <img src="assets/lucha.png" alt="logo lucha" class="tipos-poke__lucha__img">
+                <p class="tipos-poke__lucha__text">Lucha</p>
             </div>
-            <div>
-                <img src="assets/psiquico.png" alt="logo psiquico">
-                <p>Psiquico</p>
+            <div class="tipos-poke__psiquico">
+                <img src="assets/psiquico.png" alt="logo psiquico" class="tipos-poke__psiquico">
+                <p class="tipos-poke__psiquico__text">Psiquico</p>
             </div>
-            <div>
-                <img src="assets/roca.png" alt="logo roca">
-                <p>Roca</p>
+            <div class="tipos-poke__roca">
+                <img src="assets/roca.png" alt="logo roca" class="tipos-poke__roca__img">
+                <p class="tipos-poke__roca__text">Roca</p>
             </div>
-            <div>
-                <img src="assets/acero.png" alt="logo acero">
-                <p>Acero</p>
+            <div class="tipos-poke__acero">
+                <img src="assets/acero.png" alt="logo acero" class="tipos-poke__acero__img">
+                <p class="tipos-poke__acero__text">Acero</p>
             </div>
-            <div>
-                <img src="assets/hielo.png" alt="logo hielo">
-                <p>Hielo</p>
+            <div class="tipos-poke__hielo">
+                <img src="assets/hielo.png" alt="logo hielo" class="tipos-poke__hielo__img">
+                <p class="tipos-poke__hielo__text">Hielo</p>
             </div>
-            <div>
-                <img src="assets/fantasma.png" alt="logo fantasma">
-                <p>Fantasma</p>
+            <div class="tipos-poke__fantasma">
+                <img src="assets/fantasma.png" alt="logo fantasma" class="tipos-poke__fantasma__img">
+                <p class="tipos-poke__fantasma__text">Fantasma</p>
             </div>
-            <div>
-                <img src="assets/deagon.png" alt="logo dragon">
-                <p>Dragon</p>
+            <div class="tipos-poke__dragon">
+                <img src="assets/deagon.png" alt="logo dragon" class="tipos-poke__dragon__img">
+                <p class="tipos-poke__dragon__text">Dragon</p>
             </div>
 
         </section>
@@ -187,10 +188,10 @@
     <footer>
         <section class="cont-foot">
             <span class="cont-foot__cont-redes">
-                <a href="">Facebook</a>
-                <a href="">Instagram</a>
-                <a href="">Linkedin</a>
-                <a href="https://www.pokemon.com/us">Pokemon.com</a>
+                <a class="cont-foot__cont-redes__facebook" href="">Facebook</a>
+                <a class="cont-foot__cont-redes__instagram" href="">Instagram</a>
+                <a class="cont-foot__cont-redes__linkedin" href="">Linkedin</a>
+                <a class="cont-foot__cont-redes__pokemon" href="https://www.pokemon.com/us">Pokemon.com</a>
             </span>
             <img class="cont-foot__img-foot" src="assets/pokemonfooter.png" alt="img footer">
         </section>
