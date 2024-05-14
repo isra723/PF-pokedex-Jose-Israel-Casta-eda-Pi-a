@@ -1,0 +1,10 @@
+@mixin align-center{
+    display :grid;
+    align-items: center;
+    
+}
+
+@mixin text-center{
+    text-align: center;
+    font-family: $font-text;
+}

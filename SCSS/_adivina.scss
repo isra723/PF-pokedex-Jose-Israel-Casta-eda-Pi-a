@@ -1,0 +1,34 @@
+/*estilos adivina pokemon*/
+.img-gues{
+    display: flex;
+    align-items: center;
+    img{
+        width: 100%;
+    }
+}
+
+.form-elem{
+    @include align-center;
+    justify-content: center;
+}
+
+.div-form{
+    margin: 20px;
+}
+
+.tabla{
+    @include align-center;
+    justify-content: center;
+    table{
+        tr{
+            td{
+                transition-duration: 1s;
+                overflow:hidden;
+                &:hover{
+                    -webkit-transform:scale(1.3);
+                    transform:scale(1.3);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+/*Main*/
+h1{
+    text-align: center;
+    font-family: $font-title-secondary;
+}
+
+.img-carrousel{
+    padding: 5%;
+    img{
+        width: 90%;
+    }
+}
+
+.carousel{
+    &__ant{
+        opacity: 0;
+    }
+    &__nxt{
+        opacity: 0;
+    }
+}
+
+.pokemon-ini{
+    &__bulbasur-box{
+        @include align-center;
+        img{
+            width: 100%;
+        }
+        span{
+            @include text-center;
+        }
+    } 
+    &__charmander-box{
+        @include align-center;
+        img{
+            width: 100%;
+        }
+        span{
+            @include text-center;
+        }
+    }
+    &__squirtle-box{
+        @include align-center;
+        img{
+            width: 100%;
+        }
+        span{
+           @include text-center;
+        }
+    }
+}
+
+
+.pokemon-ini{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tipos-poke {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galeria{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    img{
+        width: 400px;
+    }
+}
+
+.info-texto{
+    padding: 10%;
+    p{
+        text-align: justify;
+    }
+    h3{
+        text-align: center  ;
+    }
+}

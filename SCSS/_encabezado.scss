@@ -1,0 +1,25 @@
+/*navbar*/
+
+header{
+    background-color: $color-header;
+    padding: 1%;
+}
+
+.navbar{
+    &__cont{
+        background-color: $color-header;
+        align-items:flex-start;
+        &__logo-poke{
+            padding: 5px;
+            width: 50px;
+        }
+    }
+}
+
+.navbar-expand-lg, .navbar-collapse {/*sobreeescribiendo estilos de bootstrap*/
+    justify-content: flex-end;
+}
+
+.navbar-toggler{
+    background-color: $color-btn-header;
+}

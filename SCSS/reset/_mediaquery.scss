@@ -1,0 +1,27 @@
+@media only screen and (max-width: 650px){
+    .cont-foot{
+        &__img-foot{
+            width: map-get($img-size , 200px );
+        }
+    }
+
+    .galeria{
+        img{
+            width: map-get($img-size , 250px );
+        }
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .cont-foot{
+        &__img-foot{
+            width: map-get($img-size , 100px );
+        }
+    }
+
+    .galeria{
+        img{
+            width: map-get($img-size , 100px );
+        }
+    }
+}

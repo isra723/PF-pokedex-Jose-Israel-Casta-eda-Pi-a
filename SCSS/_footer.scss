@@ -1,0 +1,25 @@
+/*Footer*/
+.cont-foot {
+    background-color: #173847;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    &__cont-redes{
+        padding: 20px;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        a{
+            padding: 2%;
+            text-decoration: none;
+            font-family: $font-socialMedia;
+            color: #ffffff;
+        }
+    }
+
+}
+
+.img-foot{
+    width: 500px; 
+}
+
