@@ -11,6 +11,17 @@ h1{
     }
 }
 
+.FAQ{
+    li{
+        padding: 1%;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 700px;
+        
+    }
+}
+
 .carousel{
     &__ant{
         opacity: 0;
@@ -79,6 +90,9 @@ h1{
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
+    img{
+        width: 100%;
+    }
 }
 
 .galeria{

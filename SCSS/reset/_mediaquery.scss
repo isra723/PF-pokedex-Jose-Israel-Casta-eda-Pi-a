@@ -1,27 +1,47 @@
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 750px){
     .cont-foot{
         &__img-foot{
-            width: map-get($img-size , 200px );
+            width: 250px;
+        }
+    }
+
+    .tipos-poke {
+        img{
+            
         }
     }
 
     .galeria{
         img{
-            width: map-get($img-size , 250px );
+            width: 250px;
+        }
+    }
+
+    .FAQ{
+        li{
+            
+            width: 300px;
         }
     }
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 400px){
     .cont-foot{
         &__img-foot{
-            width: map-get($img-size , 100px );
+           
+            width: 100px;
         }
     }
 
     .galeria{
         img{
-            width: map-get($img-size , 100px );
+            width: 100px;
+        }
+    }
+
+    .FAQ{
+        li{
+            width: 150px;
         }
     }
 }

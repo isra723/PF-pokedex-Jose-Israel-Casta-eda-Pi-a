@@ -64,6 +64,14 @@ h1 {
   width: 90%;
 }
 
+.FAQ li {
+  padding: 1%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 700px;
+}
+
 .carousel__ant {
   opacity: 0;
 }
@@ -134,6 +142,9 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
 }
+.tipos-poke img {
+  width: 100%;
+}
 
 .galeria {
   display: inline-flex;
@@ -178,6 +189,28 @@ h1 {
   width: 500px;
 }
 
+@media only screen and (max-width: 750px) {
+  .cont-foot__img-foot {
+    width: 250px;
+  }
+  .galeria img {
+    width: 250px;
+  }
+  .FAQ li {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .cont-foot__img-foot {
+    width: 100px;
+  }
+  .galeria img {
+    width: 100px;
+  }
+  .FAQ li {
+    width: 150px;
+  }
+}
 /*estilos adivina pokemon*/
 .img-gues {
   display: flex;
