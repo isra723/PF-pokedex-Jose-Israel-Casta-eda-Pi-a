@@ -13,15 +13,16 @@ li{
     font-family: $font-text;
 }
 
-img{
+.hov img{
     border-radius: 20px;
-    transition-duration: 1s;
     overflow:hidden;
-        &:hover{
-            filter: opacity(.5);
-            -webkit-transform:scale(1.3);
-            transform:scale(1.3);
-        }
+    transition-duration: 1s;
+    &:hover{
+        filter: opacity(.5);
+        -webkit-transform:scale(1.3);
+        transform:scale(1.3);
+    }
+    
 }
 
 .selector-for-some-widget {

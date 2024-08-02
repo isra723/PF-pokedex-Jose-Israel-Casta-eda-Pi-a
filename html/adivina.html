@@ -29,15 +29,16 @@
     </script>
     <!--link a estilos-->
     <link rel="stylesheet" href="../css/main.css">
-    <!--Link a JS-->
-    <script src="../js/main.js"></script>
+    
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-md  
                 navbar-dark">
             <div class="container-fluid">
-                <img src="../assets/pokebola.png" alt="logo pokebola" class="navbar__cont__logo-poke">
+                <span class="hov">
+                    <img src="../assets/pokebola.png" alt="logo pokebola" class="navbar__cont__logo-poke">
+                </span>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
                     aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -76,8 +77,8 @@
     </header>
     <main>
         <h1>Who's that pokemon?</h1>
-        <span class="img-gues">
-            <img src="../assets/htp.jpg" alt="quien es ese pokemon"> 
+        <span class="img-gues" id="img-gues">
+            <img class="hov" src="../assets/htp.jpg" alt="quien es ese pokemon"> 
         </span>
        <form action="" class="form-elem">
             <div class="div-form">
@@ -103,7 +104,10 @@
                 <a href="https://www.pokemon.com/us">Pokemon.com</a>
 
             </span>
-            <img class="cont-foot__img-foot" src="../assets/pokemonfooter.png" alt="">
+            <span class="hov">
+                 <img class="cont-foot__img-foot" src="../assets/pokemonfooter.png" alt="">
+            </span>
+           
         </section>
 
     </footer>
@@ -116,5 +120,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <!--Link a JS-->
+    <script src="../js/main.js"></script>
 </body>
 </html>

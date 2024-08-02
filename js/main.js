@@ -1,7 +1,7 @@
 const pokemones = [
     {
         name: "Bulbasaur",
-        img: "../assets001. Bulbasaur.jpg",
+        img: "../assets/001. Bulbasaur.jpg",
         number: 1
     },
     {
@@ -519,5 +519,255 @@ const pokemones = [
         img: "../assets/103. Exeggutor.jpg",
         number: 103
     },
+    {
+        name: "Cubone",
+        img: "../assets/104. Cubone.jpg",
+        number: 104
+    },
+    {
+        name: "Marowak",
+        img: "../assets/105. Marowak.jpg",
+        number: 105
+    },
+    {
+        name: "Hitmonlee",
+        img: "../assets/106. Hitmonlee.jpg",
+        number: 106
+    },
+    {
+        name: "Hitmonchan",
+        img: "../assets/107. Hitmonchan.jpg",
+        number: 107
+    },
+    {
+        name: "Lickitung",
+        img: "../assets/108. Lickitung.jpg",
+        number: 108
+    },
+    {
+        name: "Koffing",
+        img: "../assets/109. Koffing.jpg",
+        number: 109
+    },
+    {
+        name: "Weezing",
+        img: "../assets/110. Weezing.jpg",
+        number: 110
+    },
+    {
+        name: "Rhyhorn",
+        img: "../assets/111. Rhyhorn.jpg",
+        number: 111
+    },
+    {
+        name: "Rhydon",
+        img: "../assets/112. Rhydon.jpg",
+        number: 112
+    },
+    {
+        name: "Chansey",
+        img: "../assets/113. Chansey.jpg",
+        number: 113
+    },
+    {
+        name: "Tanglea",
+        img: "../assets/114. Tanglea.jpg",
+        number: 114
+    },
+    {
+        name: "Kangaskhan",
+        img: "../assets/115. Kangaskhan.jpg",
+        number: 115
+    },
+    {
+        name: "Horsea",
+        img: "../assets/116. Horsea.jpg",
+        number: 116
+    },
+    {
+        name: "Seadra",
+        img: "../assets/117. Seadra.jpg",
+        number: 117
+    },
+    {
+        name: "Goldeen",
+        img: "../assets/118. Goldeen.jpg",
+        number: 118
+    },
+    {
+        name: "Seaking",
+        img: "../assets/119. Seaking.jpg",
+        number: 119
+    },
+    {
+        name: "Staryu",
+        img: "../assets/120. Staryu.jpg",
+        number: 120
+    },
+    {
+        name: "Starmie",
+        img: "../assets/121. Starmie.jpg",
+        number: 121
+    },
+    {
+        name: "Mr. Mime",
+        img: "../assets/122. Mr. Mime.jpg",
+        number: 122
+    },
+    {
+        name: "Scyther",
+        img: "../assets/123. Scyther.jpg",
+        number: 123
+    },
+    {
+        name: "Jynx",
+        img: "../assets/124. Jynx.jpg",
+        number: 124
+    },
+    {
+        name: "Electabuzz",
+        img: "../assets/125. Electabuzz.jpg",
+        number: 125
+    },
+    {
+        name: "Magmar",
+        img: "../assets/126. Magmar.jpg",
+        number: 126
+    },
+    {
+        name: "Pinsir",
+        img: "../assets/127. Pinsir.jpg",
+        number: 127
+    },
+    {
+        name: "Tauros",
+        img: "../assets/128. Tauros.jpg",
+        number: 128
+    },
+    {
+        name: "Magikarp",
+        img: "../assets/129. Magikarp.jpg",
+        number: 129
+    },
+    {
+        name: "Gyarados",
+        img: "../assets/130. Gyarados.jpg",
+        number: 130
+    },
+    {
+        name: "Lapras",
+        img: "../assets/131. Lapras.jpg",
+        number: 131
+    },
+    {
+        name: "Ditto",
+        img: "../assets/132. Ditto.jpg",
+        number: 132
+    },
+    {
+        name: "Eevee",
+        img: "../assets/133. Eevee.jpg",
+        number: 133
+    },
+    {
+        name: "Vaporeon",
+        img: "../assets/134. Vaporeon.jpg",
+        number: 134
+    },
+    {
+        name: "Jolteon",
+        img: "../assets/135. Jolteon.jpg",
+        number: 135
+    },
+    {
+        name: "Jolteon",
+        img: "../assets/135. Jolteon.jpg",
+        number: 135
+    },
+    {
+        name: "Flareon",
+        img: "../assets/136. Flareon.jpg",
+        number: 136
+    },
+    {
+        name: "Porygon",
+        img: "../assets/137. Porygon.jpg",
+        number: 137
+    },
+    {
+        name: "Omanyte",
+        img: "../assets/138. Omanyte.jpg",
+        number: 138
+    },
+    {
+        name: "Omastar",
+        img: "../assets/139. Omastar.jpg",
+        number: 139
+    },
+    {
+        name: "Kabuto",
+        img: "../assets/140. Kabuto.jpg",
+        number: 140
+    },
+    {
+        name: "Kabutops",
+        img: "../assets/141. Kabutops.jpg",
+        number: 141
+    },
+    {
+        name: "Aerodactyl",
+        img: "../assets/142. Aerodactyl.jpg",
+        number: 142
+    },
+    {
+        name: "Snorlax",
+        img: "../assets/143. Snorlax.jpg",
+        number: 143
+    },
+    {
+        name: "Articuno",
+        img: "../assets/144. Articuno.jpg",
+        number: 144
+    },
+    {
+        name: "Zapdos",
+        img: "../assets/145. Zapdos.jpg",
+        number: 145
+    },
+    {
+        name: "Moltres",
+        img: "../assets/146. Moltres.jpg",
+        number: 146
+    },
+    {
+        name: "Dratini",
+        img: "../assets/147. Dratini.jpg",
+        number: 147
+    },
+    {
+        name: "Dragonair",
+        img: "../assets/148. Dragonair.jpg",
+        number: 148
+    },
+    {
+        name: "Dragonite",
+        img: "../assets/149. Dragonite.jpg",
+        number: 149
+    },
+    {
+        name: "Mewtwo",
+        img: "../assets/150. Mewtwo.jpg",
+        number: 150
+    },
+    {
+        name: "Mew",
+        img: "../assets/151. Mew.jpg",
+        number: 151
+    }
 ]
 
+
+
+const imggues = document.getElementById("img-gues")
+imggues.innerHTML = `<img src="${pokemones[152].img}">`
+//imggues.innerHTML += `${console.log(pokemones[0].img)}`

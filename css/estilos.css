@@ -1,0 +1,249 @@
+/*general*/
+h3 {
+  font-family: "Libre Franklin", sans-serif;
+  text-align: center;
+}
+
+p, label, td {
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+}
+
+li {
+  font-family: "Kanit", sans-serif;
+}
+
+img {
+  border-radius: 20px;
+  transition-duration: 1s;
+  overflow: hidden;
+}
+img:hover {
+  filter: opacity(0.5);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+/*navbar*/
+header {
+  background-color: #3e90b6;
+  padding: 1%;
+}
+
+.navbar__cont {
+  background-color: #3e90b6;
+  align-items: flex-start;
+}
+.navbar__cont__logo-poke {
+  padding: 5px;
+  width: 50px;
+}
+
+.navbar-expand-lg, .navbar-collapse { /*sobreeescribiendo estilos de bootstrap*/
+  justify-content: flex-end;
+}
+
+.navbar-toggler {
+  background-color: #5ebdf0;
+}
+
+/*Main*/
+h1 {
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.img-carrousel {
+  padding: 5%;
+}
+.img-carrousel img {
+  width: 90%;
+}
+
+.FAQ li {
+  padding: 1%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 700px;
+}
+
+.carousel__ant {
+  opacity: 0;
+}
+.carousel__nxt {
+  opacity: 0;
+}
+
+.pokemon-ini__bulbasur-box {
+  display: grid;
+  align-items: center;
+}
+.pokemon-ini__bulbasur-box img {
+  width: 100%;
+  transition-duration: 1s;
+  overflow: hidden;
+}
+.pokemon-ini__bulbasur-box img:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+.pokemon-ini__bulbasur-box span {
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+}
+.pokemon-ini__charmander-box {
+  display: grid;
+  align-items: center;
+}
+.pokemon-ini__charmander-box img {
+  width: 100%;
+  transition-duration: 1s;
+  overflow: hidden;
+}
+.pokemon-ini__charmander-box img:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+.pokemon-ini__charmander-box span {
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+}
+.pokemon-ini__squirtle-box {
+  display: grid;
+  align-items: center;
+}
+.pokemon-ini__squirtle-box img {
+  width: 100%;
+  transition-duration: 1s;
+  overflow: hidden;
+}
+.pokemon-ini__squirtle-box img:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+.pokemon-ini__squirtle-box span {
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+}
+
+.pokemon-ini {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tipos-poke {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tipos-poke img {
+  width: 100%;
+}
+
+.galeria {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.galeria img {
+  width: 400px;
+}
+
+.info-texto {
+  padding: 10%;
+}
+.info-texto p {
+  text-align: justify;
+}
+.info-texto h3 {
+  text-align: center;
+}
+
+/*Footer*/
+.cont-foot {
+  background-color: #173847;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cont-foot__cont-redes {
+  padding: 20px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cont-foot__cont-redes a {
+  padding: 2%;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  color: #ffffff;
+}
+
+.img-foot {
+  width: 500px;
+}
+
+@media only screen and (max-width: 750px) {
+  .cont-foot__img-foot {
+    width: 250px;
+  }
+  .galeria img {
+    width: 250px;
+  }
+  .FAQ li {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .cont-foot__img-foot {
+    width: 100px;
+  }
+  .galeria img {
+    width: 100px;
+  }
+  .FAQ li {
+    width: 150px;
+  }
+}
+/*estilos adivina pokemon*/
+.img-gues {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-gues img {
+  width: 70%;
+  filter: brightness(0.1);
+}
+
+.form-elem {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-form {
+  margin: 20px;
+}
+
+.tabla {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.tabla table tr td {
+  transition-duration: 1s;
+  overflow: hidden;
+}
+.tabla table tr td:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+/*# sourceMappingURL=estilos.css.map */
