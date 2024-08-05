@@ -238,7 +238,11 @@ h1 {
 .colection-sec {
   padding: 5%;
   padding-top: 0.5%;
-  display: flex;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.colection-sec img {
+  width: 30%;
 }
 
 .title-col {

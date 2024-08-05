@@ -20,11 +20,13 @@
 }
 
 .colection-sec{
-    
+    img{
+        width: 30%;
+    }
     padding: 5%;
     padding-top: 0.5%;
-
-    display: flex;
+    display:inline-flex;
+    flex-wrap: wrap;
 }
 .title-col{
     padding-left: 10%;
