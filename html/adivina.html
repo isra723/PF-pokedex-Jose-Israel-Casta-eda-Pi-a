@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!--opengraph-->
-     <meta property="og:type" content="article">
-     <meta property="og:title" content="Pokedex">
-     <meta property="og:url" content="https://pokepinadex.000webhostapp.com/">
-     <meta property="og:image" content="https://pokepinadex.000webhostapp.com/assets/pokeall.jpg">
-     <meta property="og:description"
-         content="Información sobre pokemon y los diferentes pokemones de la primera generación">
-     <meta property="article:author" content="José Israel Castañeda Piña">
-     <!--Descripción-->
+    <!--opengraph-->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Pokedex">
+    <meta property="og:url" content="https://pokepinadex.000webhostapp.com/">
+    <meta property="og:image" content="https://pokepinadex.000webhostapp.com/assets/pokeall.jpg">
+    <meta property="og:description"
+        content="Información sobre pokemon y los diferentes pokemones de la primera generación">
+    <meta property="article:author" content="José Israel Castañeda Piña">
+    <!--Descripción-->
     <meta name="description" content="Adivina el pokemon">
     <!--Keywords-->
     <meta name="keywords" content="pokemon, pokemones, pokedex, tipos pokemon, pikachu">
@@ -21,7 +22,9 @@
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@0;1&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@0;1&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
     <title>Pokedex - Adivina pokemon</title>
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -29,8 +32,9 @@
     </script>
     <!--link a estilos-->
     <link rel="stylesheet" href="../css/main.css">
-    
+
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-md  
@@ -76,20 +80,17 @@
         </nav>
     </header>
     <main>
-        <h1>Who's that pokemon?</h1>
-        
-        <span class="img-gues" id="img-gues">
-            <img class="hov advpk" src="../assets/htp.jpg" alt="quien es ese pokemon"> 
-        </span>
-       <form action="" class="form-elem" id="form-elem">
-            <div class="div-form">
-                <label for="">Nombre: </label>
-                <input type="text">
-            </div>
-            <div class="div-form">
-                <input type="submit" value="Adivinar">
-            </div>
-       </form>
+        <section class="cont-adv">
+            <h1>Who's that pokemon?</h1>
+            <span class="img-gues" id="img-gues">
+                <img class="hov advpk" src="../assets/htp.jpg" alt="quien es ese pokemon">
+            </span>
+            <span class="form-elem" id="form-elem">
+                <input type="" value="" id="input-adv" placeholder="Nombre del pokemon">
+                <button id="btnAdv">Adivinar</button>
+                <button type="" value="" id="otroPkm">Otro Pokemon</button>
+            </span>
+        </section>
     </main>
     <footer>
         <section class="cont-foot">
@@ -101,9 +102,9 @@
 
             </span>
             <span class="hov">
-                 <img class="cont-foot__img-foot" src="../assets/pokemonfooter.png" alt="">
+                <img class="cont-foot__img-foot" src="../assets/pokemonfooter.png" alt="">
             </span>
-           
+
         </section>
 
     </footer>

@@ -3,14 +3,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 3%;
     .advpk{
         width: 70%;
     }
 }
 
+.adivinado{
+    img{
+        width: 70%;
+    }
+}
+
+.wrong{
+    background-color: red;
+}
+
+.cont-adv{
+    padding: 5%;
+}
+
 .styl-imgg{
     filter: brightness(0); 
-    left: 20%;
+    left: 23%;
     width: 30%; 
     position:absolute; 
     z-index:1;

@@ -74,7 +74,7 @@ const pokemones = [
     {
         name: "Weedle",
         img: "../assets/013. Weedle.jpg",
-        hideimg: "../assets/13.png",
+        hideimg: "../assets/013.png",
         number: 13
     },
     {
@@ -907,10 +907,28 @@ const pokemones = [
     }
 ]
 
+let pkm = Math.floor(Math.random()*150) ;
+const otroPkm = document.getElementById("otroPkm")
+const imggues = document.getElementById("img-gues")
+const inputAdv = document.getElementById("input-adv")
+const btnAdv = document.getElementById("btnAdv")
+
 const form = document.getElementById("form-elem")
 
+imggues.innerHTML += `<img src="${pokemones[pkm].hideimg}" class="styl-imgg" alt="${pokemones[pkm].name}">`
+console.log("Pista: " + pokemones[pkm].name)
 
-const imggues = document.getElementById("img-gues")
-imggues.innerHTML += `<img src="${pokemones[0].hideimg}" class="styl-imgg">`
+btnAdv.addEventListener("click", ()=>{
+    if(pokemones[pkm].name.toLowerCase() == inputAdv.value.toLowerCase()){
+        imggues.innerHTML = `<img src="${pokemones[pkm].img}" alt="${pokemones[pkm].name}">`  
+        imggues.classList.add("adivinado")
+        imggues.classList.remove("wrong")
+    }else{
+        imggues.classList.add("wrong")
+    }
+    
+})
 
-//agregar clase css: imgguess.className += "nombre de la clase" o .classList.add("") .remove("")
+otroPkm.addEventListener("click", ()=>{
+    location.reload()
+})
