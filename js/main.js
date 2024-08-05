@@ -535,7 +535,7 @@ const pokemones = [
     },
     {
         name: "Shellder",
-        img: "../assets/090. Shelder.jpg",
+        img: "../assets/090. Shellder.jpg",
         hideimg: "../assets/090.png",
         number: 90
     },
@@ -907,28 +907,45 @@ const pokemones = [
     }
 ]
 
-let pkm = Math.floor(Math.random()*150) ;
+let pkm = Math.floor(Math.random() * 150);
 const otroPkm = document.getElementById("otroPkm")
 const imggues = document.getElementById("img-gues")
 const inputAdv = document.getElementById("input-adv")
 const btnAdv = document.getElementById("btnAdv")
-
 const form = document.getElementById("form-elem")
+const colect = document.getElementById("colection-sec")
+let key = "numbres"
+let newnumber = pokemones[pkm].number
+const storedArray = localStorage.getItem(key)
+const array = storedArray ? JSON.parse(storedArray) : []
+
 
 imggues.innerHTML += `<img src="${pokemones[pkm].hideimg}" class="styl-imgg" alt="${pokemones[pkm].name}">`
 console.log("Pista: " + pokemones[pkm].name)
 
-btnAdv.addEventListener("click", ()=>{
-    if(pokemones[pkm].name.toLowerCase() == inputAdv.value.toLowerCase()){
-        imggues.innerHTML = `<img src="${pokemones[pkm].img}" alt="${pokemones[pkm].name}">`  
-        imggues.classList.add("adivinado")
-        imggues.classList.remove("wrong")
-    }else{
-        imggues.classList.add("wrong")
-    }
-    
+let arrayCol = JSON.parse(localStorage.getItem(key))
+
+arrayCol.forEach(elem => {
+    colect.innerHTML += `<img src="${pokemones[elem - 1].img}">`
+    colect.classList.add("hov")
 })
 
-otroPkm.addEventListener("click", ()=>{
+btnAdv.addEventListener("click", () => {
+    if (pokemones[pkm].name.toLowerCase() == inputAdv.value.toLowerCase()) {
+        imggues.innerHTML = `<img src="${pokemones[pkm].img}" alt="${pokemones[pkm].name}">`
+        imggues.classList.add("adivinado")
+        imggues.classList.remove("wrong")
+        array.push(newnumber)
+        localStorage.setItem(key, JSON.stringify(array))
+    } else {
+        imggues.classList.add("wrong")
+    }
+})
+
+otroPkm.addEventListener("click", () => {
     location.reload()
 })
+
+
+//colect.innerHTML += localStorage.getItem(key)
+//console.log(localStorage.getItem(key))
