@@ -907,7 +907,8 @@ const pokemones = [
     }
 ]
 
-let pkm = Math.floor(Math.random() * 151) + 1;
+let pkm = Math.floor(Math.random() * 151);
+console.log(pkm)
 const otroPkm = document.getElementById("otroPkm")
 const imggues = document.getElementById("img-gues")
 const inputAdv = document.getElementById("input-adv")
@@ -923,6 +924,7 @@ let arrayCol = JSON.parse(localStorage.getItem(key))
 if (arrayCol !== null) {
     arrayCol.forEach(elem => {
         colect.innerHTML += `<img src="${pokemones[elem - 1].img}">`
+        
         colect.classList.add("hov")
     })
 } else {
@@ -934,6 +936,7 @@ console.log("Pista: " + pokemones[pkm].name)
 
 btnAdv.addEventListener("click", () => {
     if (pokemones[pkm].name.toLowerCase() == inputAdv.value.toLowerCase()) {
+        console.log(pkm)
         imggues.innerHTML = `<img src="${pokemones[pkm].img}" alt="${pokemones[pkm].name}">`
         imggues.classList.add("adivinado")
         imggues.classList.remove("wrong")
