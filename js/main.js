@@ -908,7 +908,6 @@ const pokemones = [
 ]
 
 let pkm = Math.floor(Math.random() * 151);
-console.log(pkm)
 const otroPkm = document.getElementById("otroPkm")
 const imggues = document.getElementById("img-gues")
 const inputAdv = document.getElementById("input-adv")
@@ -916,7 +915,7 @@ const btnAdv = document.getElementById("btnAdv")
 const form = document.getElementById("form-elem")
 const colect = document.getElementById("colection-sec")
 const free = document.getElementById("freePkm")
-
+//manejando local storage
 let key = "numbres"
 const array = localStorage.getItem(key) ? JSON.parse(localStorage.getItem(key)) : []
 let arrayCol = JSON.parse(localStorage.getItem(key))
@@ -924,13 +923,23 @@ let arrayCol = JSON.parse(localStorage.getItem(key))
 if (arrayCol !== null) {
     arrayCol.forEach(elem => {
         colect.innerHTML += `<img src="${pokemones[elem - 1].img}">`
-        
         colect.classList.add("hov")
     })
 } else {
     arrayCol = []
 }
 
+//consumiendo de la pokeapi
+let api = "https://pokeapi.co/api/v2/pokemon/" + ((pkm + 1).toString())
+
+//se debe usar try
+fetch(api).then(respuesta => respuesta.json())
+.then(datos => {
+    //imggues.innerHTML = `<img src="${datos.sprites.back_default}" alt="${pokemones[pkm].name}">`
+    //datos.name
+})
+
+//colocando la imagen del pokemon con un estilo que hace que se vea obscuro
 imggues.innerHTML += `<img src="${pokemones[pkm].hideimg}" class="styl-imgg" alt="${pokemones[pkm].name}">`
 console.log("Pista: " + pokemones[pkm].name)
 
@@ -956,5 +965,6 @@ free.addEventListener("click", () => {
     localStorage.clear()
     location.reload()
 })
+
 //colect.innerHTML += localStorage.getItem(key)
 //console.log(localStorage.getItem(key))
