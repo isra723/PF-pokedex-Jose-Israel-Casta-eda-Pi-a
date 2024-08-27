@@ -138,8 +138,8 @@ const pokemones = [
         number: 23
     },
     {
-        name: "Abrok",
-        img: "../assets/024. Abrok.jpg",
+        name: "Arbok",
+        img: "../assets/024. Arbok.jpg",
         hideimg: "../assets/024.png",
         number: 24
     },
@@ -907,8 +907,8 @@ const pokemones = [
     }
 ]
 
-let pkm = Math.floor(Math.random() * 151);
-console.log(pkm)
+
+
 const otroPkm = document.getElementById("otroPkm")
 const imggues = document.getElementById("img-gues")
 const inputAdv = document.getElementById("input-adv")
@@ -916,6 +916,12 @@ const btnAdv = document.getElementById("btnAdv")
 const form = document.getElementById("form-elem")
 const colect = document.getElementById("colection-sec")
 const free = document.getElementById("freePkm")
+let pkm = Math.floor(Math.random() * 151)
+
+imggues.innerHTML = `<img class="hov advpk" src="../assets/htp.jpg" alt="quien es ese pokemon">`
+imggues.innerHTML += `<img src="${pokemones[pkm].hideimg}" class="styl-imgg" alt="${pokemones[pkm].name}">`
+console.log("Pista: " + pokemones[pkm].name)
+
 
 let key = "numbres"
 const array = localStorage.getItem(key) ? JSON.parse(localStorage.getItem(key)) : []
@@ -924,19 +930,19 @@ let arrayCol = JSON.parse(localStorage.getItem(key))
 if (arrayCol !== null) {
     arrayCol.forEach(elem => {
         colect.innerHTML += `<img src="${pokemones[elem - 1].img}">`
-        
         colect.classList.add("hov")
     })
 } else {
     arrayCol = []
 }
 
-imggues.innerHTML += `<img src="${pokemones[pkm].hideimg}" class="styl-imgg" alt="${pokemones[pkm].name}">`
-console.log("Pista: " + pokemones[pkm].name)
+
+
 
 btnAdv.addEventListener("click", () => {
+    console.log(inputAdv.value + pokemones[pkm].name)
     if (pokemones[pkm].name.toLowerCase() == inputAdv.value.toLowerCase()) {
-        console.log(pkm)
+        console.log(pkm + "le atinaste")
         imggues.innerHTML = `<img src="${pokemones[pkm].img}" alt="${pokemones[pkm].name}">`
         imggues.classList.add("adivinado")
         imggues.classList.remove("wrong")
