@@ -28,6 +28,9 @@
     display:inline-flex;
     flex-wrap: wrap;
 }
+
+
+
 .title-col{
     padding-left: 10%;
 }
@@ -47,6 +50,17 @@
 .form-elem{
     @include align-center;
     justify-content: center;
+}
+
+.team{
+    display: flex;
+    gap: 10%;
+    .imgTeam{
+        max-width: 50%;
+        img{
+            width: 70%;
+        }
+    }
 }
 
 .div-form{

@@ -267,6 +267,17 @@ h1 {
   justify-content: center;
 }
 
+.team {
+  display: flex;
+  gap: 10%;
+}
+.team .imgTeam {
+  max-width: 50%;
+}
+.team .imgTeam img {
+  width: 70%;
+}
+
 .div-form {
   margin: 20px;
   display: flex;
