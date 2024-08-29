@@ -2,6 +2,6 @@
 
 ## Con información de solo la primera generación de pokemon
 
-## Pagina hecha para el curso de desarrollo web de coderhouse
+## Pagina hecha para los cursos de desarrollo web y javascript de coderhouse
 
 ## José Israel Castañeda Piña
